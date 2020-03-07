@@ -29,6 +29,8 @@ public class DateCompare {
 		Date inputDate = sdf1.parse(inputDateStr);
 		
 		System.out.println(inputDate.getTime() >= startDate.getTime() && inputDate.getTime() <= endDate.getTime() );
+		// another way to compare dates
+		System.out.println(!startDate.after(inputDate) && !endDate.before(inputDate));
 	}
 	
 	
